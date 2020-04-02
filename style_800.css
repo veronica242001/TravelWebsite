@@ -1,0 +1,115 @@
+html{
+    font-size:13.5px;
+  }
+  /*----------meniu--------*/
+  ul.menu>li{
+    width:20%;
+   } 
+
+   ul.menu>li:hover ul.submenu{
+       width:100vw;
+       position:absolute;
+       display: block;
+       left:0px;
+       top:2rem;
+       
+       
+   }
+    ul.menu>li:hover ul.submenu>li{
+       float:left;
+       width:15%;
+       border:none;
+       
+   }  
+   /*-----galerie animata----*/
+   /*--galerie animata---*/
+    #container_animatie{
+    height:350px;
+}
+#derulant{
+animation-duration: 25s;
+}
+@keyframes my_anm{
+0%{
+left:0px;
+}
+100%{
+left:-320%;
+}
+}
+
+   /*------------*/
+   .grid2 {
+    display:block;
+   }
+   /*----galerie----*/
+    #gr {
+        grid-template-columns: repeat(2,1fr);
+      }
+    /*----tabel responsive-----------*/
+    table{
+        width:100%;
+        border-bottom: 1px solid;
+        white-space: nowrap;
+        
+        
+    }
+   table thead{
+       
+       display:none
+   }
+   table tr{
+       display:block;
+       margin-top:1em;
+       padding-bottom:1.2em;
+       
+   }
+  
+   
+   
+   tr>td:first-child{
+      color:white ;
+      background-color:#ce3716 ;
+       
+       text-align: center;
+       font-variant:small-caps;
+       font-size: 150%;
+       border-radius: 10px 10px 0px 0px;
+      
+  
+   }
+  table td{
+      display:block;
+      text-align:center;
+      min-height:14px;
+  }
+  tr>td:nth-of-type(2),tr>td:nth-of-type(3){
+    
+      float:left;
+      width:49%;
+      height:2rem;
+       border:0.1rem dotted;
+       overflow: hidden;
+       text-align: center;
+   }
+   tr{background-color:rgb(17, 15, 15);
+      color:white;}
+   tr>td:nth-of-type(2){
+       margin-right: 2% ;
+   }
+   tr td:nth-of-type(4){
+       margin-top: 2.1rem;
+   }
+  
+  
+  tr td:nth-of-type(4)::before{
+      content: "Opere:";
+      float:left;
+      
+  }
+  tr td:nth-of-type(5)::before{
+      content: "Locatie:";
+      float:left;
+      
+  }
+  
