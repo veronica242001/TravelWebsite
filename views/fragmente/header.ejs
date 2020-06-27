@@ -1,0 +1,48 @@
+ <header>
+ <div class="afis_header">
+  <% if(!locals.username) {  %>
+    <form method="post" action="/login">
+      <label>
+          Username: <input type="text" name="username" value="">
+        </label>
+        <label>
+          Parola: <input type="password" name="parola" value="">
+        </label>
+        <input type="submit" value="OK">
+    </form>
+    <% }
+    else { %>
+    Utilizator logat: <%= locals.username  %> </br>
+    <a href="/logout" >Logout</a> 
+    <% } %>
+    </hr>
+  </div>
+   <!-- <h1> Renașterea în orașele italiene </h1> -->
+    <nav>
+      <ul class="menu">
+
+
+        <li><a href="/index">Renașterea</a></li>
+        <li>
+          <div class="wb">Orașe</div>
+
+          <ul class="submenu">
+
+            <li> <a href="/florenta">Florența</a></li>
+            <li> <a href="/venetia">Veneția</a></li>
+            <li> <a href="/roma">Roma</a></li>
+
+          </ul>
+        </li>
+        <li><a href="/logare">Inregistrare</a></li>
+        <li><a href="/excursii">Excursii</a></li>
+        <li> <a href="/galerie"> Galerie</a></li>
+
+      </ul>
+    </nav>
+    <br /><br /><br/>
+    
+    
+     
+
+  </header>

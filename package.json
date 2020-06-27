@@ -1,0 +1,28 @@
+{
+  "name": "proiect_final",
+  "version": "1.0.0",
+  "description": "\"site despre Renastere\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronica242001/proiect-html-css.git"
+  },
+  "keywords": [
+    "\"renastere\""
+  ],
+  "author": "\"Coiculescu Veronica\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veronica242001/proiect-html-css/issues"
+  },
+  "homepage": "https://github.com/veronica242001/proiect-html-css#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+   
+     <head>
+  
+        <title>Excursii</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Italia una dintre cele mai frumoase destinatii ale lumii">
+        <meta name="keywords" content="Renastere, Italia, artisti, opere">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/edit_pagina.css">
+        <link rel="stylesheet" type="text/css" href="/css/meniu.css">
+        <link rel="stylesheet" href="/css/style_800.css" type="text/css" media="screen and (max-width: 700px)" />
+        <link rel="stylesheet" href="/css/style_400.css" type="text/css" media="screen and (max-width: 400px)" />
+        <link rel=" stortcut icon" type="image/x-icon" href="/poze-proiect/favicon.ico" />
+          <!-- pentru afisarea ca template am downloadat ejs.min.js de la https://github.com/mde/ejs/releases/tag/v3.0.2 -->
+        <script src="js/ejs.min.js"></script>
+
+       <script src="js/script.js"></script>
+         </head>
+     <body>
+        <%-  include('../fragmente/header')  %> 
+         <main>
+        
+        <p class="pjson">Alege Optiunea Dorita</p>
+            <!-- aici se va afisa continutul neprocesat al JSON-ului -->
+         <div class="container_butoane">
+         <button id="crescator_pret"> Afiseaza crescator dupa pret</button>
+          <button id="pret_minim">Calculeaza pretul minim</button>
+          <button id="reset">Reseteaza</button>
+          <label> Scrieti Orasul Dorit:
+            <input id="i_text" type="text" value="Roma">
+          </label>
+          <button id="sterge">Sterge excursiile din orasul</button>
+         
+          
+          
+          <div>Alegeti modalitatea de filtare:<!-- trebuie sa aiba acelasi name ca sa formeze un grup -->
+            <label>Minim 3 nopti cazare
+              <input id="i_rad1" name="gr_rad" value="3" type="radio"/>
+            </label>
+            <label>Minim 5 nopti cazare
+              <input id="i_rad2" name="gr_rad" value="5" type="radio"/>
+            </label>
+            <label>Minim 7 nopti cazare
+              <input id="i_rad3" name="gr_rad" value="7" type="radio"/>
+            </label>
+          </div>
+            <button id="cazare">Filtreaza dupa criteriul ales</button>
+
+            <button id="sort_complex">Sorteaza mai intai dupa oras, apoi dupa pret</button>
+            <button id="sort_descrescator">Sorteaza descrescator dupa pretul pentru o noapte de cazare</button>
+            <button id="elimin_vide">Elimina elem care contin siruri vide</button>
+         
+         
+            <p> Daca doriti sa afisati hoteluri cu un anumit numar de stele, apasati tasta corespunzatoare numarului( DIN INTERVALUL [1,6])</p>
+        </div>
+        <section id="container_info">
+          
+          <div id="info">Informatii:</div>
+        </section>
+           
+        <p class="pjson"> Cu template:</p>
+            
+     <div class="afis" id="afisTemplate">
+       <!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+      </div>
+      
+        </main>
+      <%- include('../fragmente/footer')  %>
+
+     
+    </body>
+</html>

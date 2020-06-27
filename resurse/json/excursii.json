@@ -1,0 +1,19 @@
+{"lastId":16,"excursii":
+ [{"id":0,"Nume_Hotel":"","Oras":"Roma","Pret":"500","nopti_cazare":"4","stele":"4","Facilitati":"piscina, sauna,sala de fitness"},
+    {"id":1,"Nume_Hotel":"Eegee","Oras":"Venetia","Pret":"555","nopti_cazare":"3","stele":"4","Facilitati":"piscina,sala de fitness"},
+    {"id":2,"Nume_Hotel":"Medussa","Oras":"Verona","Pret":"300","nopti_cazare":"5","stele":"3","Facilitati":"sala de fitness"},
+    {"id":3,"Nume_Hotel":"Ocean","Oras":"Florenta","Pret":"650","nopti_cazare":"6","stele":"3","Facilitati":""},
+    {"id":4,"Nume_Hotel":"Anastassia","Oras":"Venetia","Pret":"700","nopti_cazare":"4","stele":"5","Facilitati":"piscina, sauna,sala de fitness"},
+    {"id":5,"Nume_Hotel":"Quirinius","Oras":"Verona","Pret":"322","nopti_cazare":"9","stele":"4","Facilitati":"piscina, sala de fitness"},
+    {"id":6,"Nume_Hotel":"Tellus","Oras":"Palermo","Pret":"751","nopti_cazare":"7","stele":"3","Facilitati":"piscina, sala de fitness"},
+    {"id":7,"Nume_Hotel":"Laren","Oras":"Milano","Pret":"678","nopti_cazare":"7","stele":"6","Facilitati":""},
+    {"id":8,"Nume_Hotel":"Anchise","Oras":"Verona","Pret":"456","nopti_cazare":"2","stele":"4","Facilitati":"piscina, sauna"},
+    {"id":9,"Nume_Hotel":"Isis","Oras":"Florenta","Pret":"345","nopti_cazare":"3","stele":"1","Facilitati":"piscina, sauna,sala de fitness"},
+    {"id":10,"Nume_Hotel":"","Oras":"Verona","Pret":"900","nopti_cazare":"4","stele":"5","Facilitati":"sauna,sala de fitness"},
+    {"id":11,"Nume_Hotel":"Osiris","Oras":"Roma","Pret":"578","nopti_cazare":"1","stele":"2","Facilitati":"piscina, sauna,sala de fitness"},
+    {"id":12,"Nume_Hotel":"Nephthys","Oras":"Venetia","Pret":"590","nopti_cazare":"4","stele":"4","Facilitati":"sauna"},
+    {"id":13,"Nume_Hotel":"Bacchus","Oras":"Florenta","Pret":"410","nopti_cazare":"2","stele":"3","Facilitati":"piscina, sauna"},
+    {"id":14,"Nume_Hotel":"","Oras":"Palermo","Pret":"123","nopti_cazare":"8","stele":"2","Facilitati":""},
+    {"id":15,"Nume_Hotel":"Veiovis","Oras":"Milano","Pret":"1240","nopti_cazare":"10","stele":"5","Facilitati":"piscina, sauna,sala de fitness"}
+
+     ]}

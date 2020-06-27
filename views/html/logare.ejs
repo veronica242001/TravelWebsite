@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+   <title>Logare</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Logare pe site">
+   <meta name="keywords" content="Renastere, Italia">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="/css/edit_pagina.css">
+  <link rel="stylesheet" type="text/css" href="/css/meniu.css">
+  <link rel="stylesheet" href="/css/style_800.css" type="text/css" media="screen and (max-width: 700px)" />
+  <link rel="stylesheet" href="/css/style_400.css" type="text/css" media="screen and (max-width: 400px)" />
+  <link rel=" stortcut icon" type="image/x-icon" href="/poze-proiect/favicon.ico" />
+  <script src="js/ejs.min.js"></script>
+
+       <script src="js/script.js"></script>
+
+</head>
+
+<body>
+   <%-  include('../fragmente/header')  %> <!-- < % - ca sa interpreteze tagurile -->
+   <main>
+   </br></br>
+	   <div class="afisare"> 
+		 <section >
+		   <h1> Inregistrare utilizator</h1>
+	 
+	<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+		<form method="post" action="/inreg" class="date"> <!-- daca nu pun action atunci actionul default este pagina curenta -->
+      <p>
+			<label>
+				Username: <input type="text" name="username" value="ana24">
+			</label>
+			</p>
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="Ana Pop">
+			</label>
+			</p>
+			<p>
+			<label>
+				Pasiuni: <input type="text" name="pasiuni" value="drumetii,fotografiat" size="50">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Reintroduceti parola: <input type="password" name="rparola" value="">
+			</label>
+			</p>
+			<p>
+			<label>
+				Email: <input type="text" name="email" value="profprofprof007@gmail.com"  size="50">
+			</label>
+         </p>
+         <p>
+			Orase: 
+			<label>
+				Roma: <input type="checkbox" name="orase" value="roma">
+			</label> 
+			<label>
+				Venetia: <input type="checkbox" name="orase" value="venetia">
+			</label> 
+			<label>
+				Florenta: <input type="checkbox" name="orase" value="florenta">
+			</label>
+			<label>
+				Milano: <input type="checkbox" name="orase" value="milano">
+			</label>
+			</p>	
+			<p>		
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+		</section>
+		<div id="quiz">
+		<p>QUIZ</p>
+        <p>Bifati casuta corespunzatoare daca validitatea raspunsului este in concordanta cu ceea ce scrie sub el</p>
+
+		</div>
+
+	
+
+
+		<section class="sec">
+               
+			<h2>Locații ale celor mai importante opere </h2>
+			<table id="tabel">
+				<caption>Scurt istoric:</caption>
+				<thead>
+					<tr>
+						<th>Artist</th>
+						<th>An nastere</th>
+						<th>An moarte</th>
+						<th>Opere</th>
+						<th>Locatie opere</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Leonardo da Vinci</td>
+						<td>1452</td>
+						<td>1519</td>
+						<td><cite> Cina cea de taina</cite></td>
+						<td>Milano</td>
+						
+					</tr>
+					<tr>
+						<td>Rafael Sanzio</td>
+						<td>1483</td>
+						<td>1520</td>
+						<td><cite>Scoala din Atena</cite>,<cite> Triumful Galateei</cite></td>
+						<td>Roma</td>
+						 
+					</tr>
+					<tr>
+						<td>Michelangelo Buonarotti</td>
+						<td>1475</td>
+						<td>1564</td>
+						<td><cite>David</cite>, <cite>Pieta</cite></td>
+						<td>Florenta, Vatican</td>
+						
+					</tr>
+					<tr>
+						<td>Sandro Botticelli</td>
+						<td>1445</td>
+						<td>1510</td>
+						<td><i lang="it">Nascita di Venere </i></td>
+						<td>Florenta</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		  </section>
+	     
+		</div>
+   </main>
+   <%- include('../fragmente/footer')  %>
+
+
+</body>
+
+</html>
